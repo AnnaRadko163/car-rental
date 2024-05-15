@@ -5,7 +5,6 @@ import "./navbar.sass"
 export default function Navbar() {
   const [mobileNav, setMobileNav] = useState(false)
   const [sticky, setSticky] = useState(false)
-  console.log(mobileNav)
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,

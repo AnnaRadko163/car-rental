@@ -1,5 +1,5 @@
 .footer-tel
-    height: 30vh
+    height: 150px
     margin-top: 10vh
     position: relative
     width: 100%
@@ -23,7 +23,7 @@
         color: #fff
         display: flex
         gap: 2rem
-        height: 30vh
+        height: 150px
         position: relative
         width: 100%
         z-index: 5
@@ -38,3 +38,80 @@
         white-space: nowrap
         text-decoration: none
         font-weight: 700
+
+.footer
+    padding: 80px 0
+    &__wrapper
+        grid-gap: 8rem
+        color: #010103
+        display: grid
+        gap: 70px
+        grid-template-columns: 27fr 21fr 21fr 23fr
+        justify-content: center
+        text-align: left
+        font-size: 16px
+        &__1
+            list-style: none
+            li:first-child 
+                font-size: 24px
+                margin-bottom: 15px
+                span 
+                    font-weight: 700
+            li:nth-child(2) 
+                color: #706f7b
+                line-height: 1.7
+                margin-bottom: 30px
+            li:nth-child(3), li:nth-child(4) 
+                font-family: Rubik, sans-serif
+                font-weight: 500
+                margin-bottom: 1rem
+                a
+                    color: #010103
+                    text-decoration: none
+                    transition: all .2s
+                    &:hover 
+                        color: #ff0000
+        &__2
+            list-style: none
+            li
+                margin-bottom: 10px
+            li:first-child 
+                cursor: auto
+                font-family: Poppins, sans-serif
+                font-size: 24px
+                font-weight: 700
+                text-transform: uppercase
+            a
+                color: #010103
+                text-decoration: none
+                transition: all .2s
+                &:hover 
+                    color: #ff0000
+            input 
+                background-color: #ececec
+                border-color: transparent
+                border-width: 1px
+                font-family: Rubik, sans-serif
+                font-size: 14px
+                font-weight: 400
+                line-height: 26px
+                margin-top: 10px
+                outline: none
+                padding: 10px 60px
+
+
+.submit-email 
+    background-color: #ff0000
+    border: 2px solid #ff0000
+    border-radius: 3px
+    box-shadow: 0 10px 15px 0 rgba(255, 83, 48, .25)
+    color: #fff
+    cursor: pointer
+    font-size: 16px
+    font-weight: 700
+    padding: 15px 25px
+    text-decoration: none
+    transition: all .3s
+    width: fit-content
+    width: 100%
+            

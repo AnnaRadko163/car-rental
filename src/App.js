@@ -28,9 +28,6 @@ function App() {
           <Route path="*" element={<div className='loading'>Ошибка в адресе ссылки</div>}/>
         </Routes>
       </Suspense>
-      <div className='abc'>
-        <div className='abc1'></div>
-      </div>
       <Footer/>
     </>
   );
