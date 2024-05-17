@@ -8,11 +8,10 @@ export default function HeaderPages(props) {
       <div className='header-pages'>
         <img src={bg} alt='заставка'/>
         <div className='container'>
-            <div className='header-pages__text'>
-                <h3>{props.title}</h3>
-                <p>Главная / {props.title}</p>
-            </div>
-            
+          <div className='header-pages__text'>
+            <h3>{props.title}</h3>
+            <p>Главная / {props.title}</p>
+          </div> 
         </div>
         
       </div>
