@@ -23,7 +23,7 @@ const MyTextInput = ({label, ...props}) => {
 
 function Contact(props) {
   return (
-    <>
+    <section className='contact-section'>
       <HeaderPages title={props.title} />
       <div className='container'>
         <div style={{ backgroundImage: `url(${bg})` }} className='contact'>
@@ -102,7 +102,7 @@ function Contact(props) {
 
         </div>
       </div>
-    </>
+    </section>
   )
 }
 

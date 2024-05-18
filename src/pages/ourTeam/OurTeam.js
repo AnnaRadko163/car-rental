@@ -6,7 +6,7 @@ import TeamItem from '../../components/teamItem/TeamItem'
 
 export default function OurTeam(props) {
   return (
-    <>
+    <section className='team-section'>
       <HeaderPages title={props.title}/>
       <div className='container'>
         <div className='team'>
@@ -15,7 +15,7 @@ export default function OurTeam(props) {
           </div>
         </div>
       </div>
-    </>
+    </section>
 
   )
 }

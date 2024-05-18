@@ -1,0 +1,80 @@
+.models
+    grid-gap: 30px
+    align-items: center
+    display: grid
+    gap: 30px
+    grid-template-columns: 1fr 1fr 1fr
+    grid-template-rows: auto
+    margin: 0 auto
+    padding: 100px 0
+    text-align: center
+    width: 1100px
+    &__box
+        border: 1px solid #d5d5d5
+        border-radius: 3px
+        display: flex
+        flex-direction: column
+        width: 350px
+    &-item
+        border-radius: 3px
+        height: auto
+        width: 100%
+        img
+            height: 270px
+            width: 100%
+        &__descr
+            color: #010103
+            display: flex
+            flex-direction: column
+            padding: 20px 30px
+        &__title-price
+            align-items: center
+            display: flex
+            justify-content: space-between
+        &__title
+            display: flex
+            flex-direction: column
+            gap: 5px
+            text-align: left
+            p
+                font-size: 24px
+                font-weight: 700
+            span
+                display: flex
+                gap: 4px
+        &__price
+            display: flex
+            flex-direction: column
+            text-align: right
+            h4
+                font-size: 28px
+            p
+                font-size: 16px
+        &__details
+            grid-row-gap: 20px
+            grid-column-gap: 70px
+            border-bottom: 1px solid #c6c6c6
+            column-gap: 50px
+            display: grid
+            grid-template-columns: 1fr 1fr
+            margin: 20px auto
+            padding-bottom: 25px
+            row-gap: 20px
+            span
+                color: #777
+                font-size: 18px
+                font-weight: 500
+                text-align: left
+        &__btn
+            background-color: #ff0000
+            border: 2px solid #ff0000
+            border-radius: 3px
+            box-shadow: 0 10px 15px 0 rgba(255, 83, 48, .35)
+            cursor: pointer
+            font-size: 18px
+            padding: 18px 30px
+            transition: all .3s
+            a
+                color: #fff
+                font-weight: 700
+                text-decoration: none

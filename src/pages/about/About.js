@@ -10,7 +10,7 @@ import img2 from "../../img/about/icon2.png"
 import img3 from "../../img/about/icon3.png"
 export default function About(props) {
   return (
-    <>
+    <section className='about-section'>
       <HeaderPages title={props.title}/>
       <div class="container">
         <div className='about'>
@@ -47,7 +47,7 @@ export default function About(props) {
         <PlanRental/>
       </div>
       
-    </>
+    </section>
     
   )
 }

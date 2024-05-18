@@ -8,9 +8,9 @@ import "./testimonials.sass"
 
 export default function Testimonials(props) {
   return (
-    <>
+    <section className='testimonials-section'>
       <HeaderPages title={props.title}/>
-      <section className='testimonials'>
+      <div className='testimonials'>
         <div className="container">
           <div className='testimonials__wrapper'>
             <div className='testimonials__title'>
@@ -51,7 +51,7 @@ export default function Testimonials(props) {
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   )
 }
