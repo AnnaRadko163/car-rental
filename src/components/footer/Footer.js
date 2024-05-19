@@ -5,7 +5,7 @@ import bg from "../../img/banners/book-banner.png"
 export default function Footer() {
   return (
     <>
-      <div className='footer-tel'>
+      <div className='footer-tel' id="fot">
         <img src={bg} alt='заставка'/>
         <div className='footer-tel__overlay'></div>
         <div className='container'>
