@@ -34,6 +34,7 @@ const dataCar = [
         fuel: "Бензин",
         src: audi,
         srcBox: audiBox,
+        open: true
     },
     {
         id: 2,
@@ -49,6 +50,7 @@ const dataCar = [
         fuel: "Дизель",
         src: golf,
         srcBox: golfBox,
+        open: false
     },
     {
         id: 3,
@@ -64,6 +66,7 @@ const dataCar = [
         fuel: "Дизель",
         src: toyota,
         srcBox: toyotaBox,
+        open: false
     },
     {
         id: 4,
@@ -79,6 +82,7 @@ const dataCar = [
         fuel: "Бензин",
         src: bmw,
         srcBox: bmwBox,
+        open: false
     },
     {
         id: 5,
@@ -94,6 +98,7 @@ const dataCar = [
         fuel: "Бензин",
         src: benz,
         srcBox: benzBox,
+        open: false
     },
     {
         id: 6,
@@ -109,6 +114,7 @@ const dataCar = [
         fuel: "Бензин",
         src: passat,
         srcBox: passatBox,
+        open: false
     },
 ]
 

@@ -2,17 +2,26 @@ import React from 'react'
 import HeaderHome from '../../components/headerHome/HeaderHome'
 import PlanRental from '../../components/planRental/PlanRental'
 
-import "./home.sass"
-import Pick from '../../components/pick/Pick'
 
-export default function Home() {
+import Pick from '../../components/pick/Pick'
+import Banner from '../../components/banner/Banner'
+import Choose from '../../components/choose/Choose'
+import TestimonialsItem from '../../components/testimonialsItem/TestimonialsItem'
+import Faq from '../../components/faq/Faq'
+
+export default function Home({setOpenForm}) {
+
   return (
-    <section className='home-section'>
-      <HeaderHome/>
+    <>
+      <HeaderHome setOpenForm={setOpenForm} />
       <PlanRental/>
-      <Pick/>
+      <Pick setOpenForm={setOpenForm}/>
+      <Banner/>
+      <Choose setOpenForm={setOpenForm}/>
+      <TestimonialsItem/>
+      <Faq/>
       
-    </section>
+    </>
     
   )
 }

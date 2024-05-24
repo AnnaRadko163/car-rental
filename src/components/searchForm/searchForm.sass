@@ -1,0 +1,99 @@
+.search-form
+    position: absolute
+    height: 100%
+    width: 100vw
+    background-color: #8f8f8fc9
+    display: flex
+    justify-content: center
+    //  align-items: center
+    top: 0
+    z-index: 9999
+    
+    &__bg
+        background-color: #fff
+        background-position: 50%
+        background-repeat: no-repeat
+        background-size: cover
+        border-radius: 5px
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, .1)
+        color: #fff
+        color: #010103
+        display: flex
+        flex-direction: column
+        margin-top: 70px
+        padding: 40px 45px 50px 55px
+        position: relative
+        width: 70%
+        height: fit-content
+        position: sticky
+        top: 70px
+    &__title
+        margin-bottom: 27px
+        display: flex
+        justify-content: space-between
+        svg
+            cursor: pointer
+        h2
+            font-size: 24px
+            font-weight: 700
+
+            
+    &__wrapper
+        grid-gap: 20px
+        display: grid
+        gap: 20px
+        grid-template-columns: 1fr 1fr 1fr
+        grid-template-rows: auto auto auto
+    &__type
+        display: flex
+        flex-direction: column
+        border: 1px solid #ccd7e6
+        border-radius: 3px
+        color: #ababab
+        font-family: Rubik, sans-serif
+        font-size: 15px
+        font-weight: 400
+        outline: none
+        padding: 12px 13px
+    &__data
+        display: flex
+        flex-direction: column
+        position: relative
+    &__box
+        display: flex 
+        flex-direction: column
+        input
+            border: 1px solid #ccd7e6
+            color: #878585
+            outline: none
+            padding-right: 30px 
+            padding: 12px 13px
+            font-family: Rubik, sans-serif
+            font-size: 15px
+            font-weight: 400
+            border-radius: 3px
+    label
+        align-items: center
+        display: flex
+        font-size: 16px
+        font-weight: 600
+        margin-bottom: 12px
+        b
+            color: #ff0000
+    button
+        align-self: self-end
+        background-color: #ff0000
+        border: none
+        box-shadow: 0 10px 15px rgba(255, 83, 48, .35)
+        color: #fff
+        cursor: pointer
+        font-family: Rubik, sans-serif
+        font-size: 18px
+        font-weight: 500
+        height: fit-content
+        padding: 12px
+        transition: all .3s
+        border-radius: 3px
+.error
+    color: #ff0000
+    font-size: 12px
