@@ -70,7 +70,7 @@ export default function Pick({setOpenForm}) {
                       <span>{openCharact.fuel}</span>
                     </div>
                   </div>
-                  <button onClick={() => setOpenForm(true)} >Забронировать сейчас</button>
+                  <button onClick={() => (setOpenForm(true))} >Забронировать сейчас</button>
                 </div>
               </div>
             </div>
