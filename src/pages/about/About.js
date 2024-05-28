@@ -1,18 +1,19 @@
 import React from 'react'
+
 import HeaderPages from '../../components/headerPages/HeaderPages'
-
-import "./about.sass"
 import PlanRental from '../../components/planRental/PlanRental'
-
 import imgAbout from "../../img/about/about-main.jpg"
 import img1 from "../../img/about/icon1.png"
 import img2 from "../../img/about/icon2.png"
 import img3 from "../../img/about/icon3.png"
+
+import "./about.sass"
+
 export default function About(props) {
   return (
     <section className='about-section'>
       <HeaderPages title={props.title}/>
-      <div class="container">
+      <div className="container">
         <div className='about'>
           <img className='about__img' src={imgAbout} alt='баннер'/>
           <div className='about__text'>

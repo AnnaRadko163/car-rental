@@ -1,11 +1,8 @@
-import React from 'react'
 import bg from "../../img/chooseUs/bg.png"
 import main from "../../img/chooseUs/main.png"
 import mark from "../../img/chooseUs/check-mark.png"
 
 import "./choose.sass"
-
-
 
 export default function Choose({setOpenForm}) {
     const chooseList = [

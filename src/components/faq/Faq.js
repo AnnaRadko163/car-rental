@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 import img from "../../img/faq/car.png";
+
 import "./faq.sass";
 
 

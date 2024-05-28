@@ -1,7 +1,9 @@
-import React from 'react'
 import { useState } from 'react'
+
 import dataCar from '../../pages/models/allDataCar'
+
 import "./pick.sass"
+
 export default function Pick({setOpenForm}) {
   const [openCar, setOpenCar] = useState(dataCar)
   let openCharact = openCar.filter(e => e.open === true)[0]
@@ -15,9 +17,9 @@ export default function Pick({setOpenForm}) {
         return e
       }
     })
-    setOpenCar(newDataCar)
-    
+    setOpenCar(newDataCar) 
   }
+
   return (
     <section className='pick'>
         <div className='container'>
@@ -68,7 +70,6 @@ export default function Pick({setOpenForm}) {
                       <span>{openCharact.fuel}</span>
                     </div>
                   </div>
-                  
                   <button onClick={() => setOpenForm(true)} >Забронировать сейчас</button>
                 </div>
               </div>

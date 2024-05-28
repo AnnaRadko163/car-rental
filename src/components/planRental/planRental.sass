@@ -1,7 +1,8 @@
 .plan
-    display: flex
-    flex-direction: column
-    margin-bottom: 100px
+    &-section
+        display: flex
+        flex-direction: column
+        margin-bottom: 100px
     &__title
         color: #010103
         margin: 0 auto
@@ -35,3 +36,44 @@
                 font-family: Rubik, sans-serif
                 font-size: 16px
                 line-height: 1.43
+
+@media (max-width:1050px) 
+    .plan
+        &__title 
+            h3 
+            font-size: 38px
+            margin: 5px 0 15px
+        &__icons
+            &__wrapper 
+                padding: 0 
+            &__box 
+                padding: 10px 5px
+
+@media (max-width:900px) 
+    .plan
+        &__title  
+            h3     
+                font-size: 30px
+                margin: 10px 0 5px   
+            h2 
+                font-size: 18px
+        &__icons
+            &__wrapper 
+                margin-top: 0
+            &__box 
+                h3 
+                    font-size: 16px
+                p 
+                    font-size: 13px
+                    
+@media (max-width:580px) 
+    .plan
+        &__icons__wrapper 
+            grid-template-columns: 1fr 
+            width: 75%
+            margin: auto
+        &__title 
+            h3 
+                font-size: 24px
+            h2 
+                font-size: 16px

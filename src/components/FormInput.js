@@ -1,4 +1,3 @@
-import React from 'react'
 import { useField } from 'formik'; 
 
 export default function FormInput ({label, ...props}) {

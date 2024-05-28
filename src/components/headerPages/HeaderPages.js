@@ -1,4 +1,3 @@
-import React from 'react'
 import bg from '../../img/hero/heroes-bg.png'
 
 import "./headerPages.sass"
@@ -13,7 +12,6 @@ export default function HeaderPages(props) {
             <p>Главная / {props.title}</p>
           </div> 
         </div>
-        
       </div>
     )
 }

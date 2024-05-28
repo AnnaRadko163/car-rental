@@ -1,5 +1,3 @@
-import React from 'react'
-import { Link } from "react-router-dom";
 import HeaderPages from '../../components/headerPages/HeaderPages'
 import dataCar from "./allDataCar"
 

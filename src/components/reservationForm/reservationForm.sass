@@ -1,4 +1,3 @@
-
 .reserve
     background-color: #fff
     border: 2px solid #fff
@@ -149,6 +148,22 @@
                 font-weight: 700
                 padding: 12px 50px
                 transition: all .2s
+
+@media (max-width:850px)
+    .reserve 
+        width: 600px
+        
+@media (max-width:650px)
+    .reserve 
+        width: 85%
+        &__info 
+            grid-template-columns: 1fr
+            &__model 
+                gap: 0px
+                h5 
+                    margin-top: 40px
+        &__form__2col
+            grid-template-columns: 1fr
 
 
         

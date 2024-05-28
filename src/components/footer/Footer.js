@@ -1,17 +1,20 @@
-import React from 'react'
-import "./footer.sass"
+import {useState} from "react"
+
 import bg from "../../img/banners/book-banner.png"
 
+import "./footer.sass"
+
 export default function Footer() {
+  const [myEmail,setMyEmail] = useState(false)
   return (
     <>
-      <div className='footer-tel' id="fot">
+      <section className='footer-tel' id="fot">
         <img src={bg} alt='заставка'/>
         <div className='footer-tel__overlay'></div>
         <div className='container'>
           <p> Забронируйте автомобиль, связавшись с нами<a href="tel:+71234567890">&#128222; 8 (123) 456-78-90</a></p>
         </div>
-      </div>
+      </section>
       <footer className='footer'>
         <div className='container'>
           <div className='footer__wrapper'>
@@ -30,7 +33,6 @@ export default function Footer() {
                 </svg>
                 &nbsp; car@carmail.com</a>
               </li>
-
             </ul>
             <ul className='footer__wrapper__2'>
               <li>Компания</li>
@@ -48,7 +50,10 @@ export default function Footer() {
               <li>Подписка</li>
               <li>Подпишитесь на рассылку новостей,чтобы быть в курсе последних новостей и обновлений.</li>
               <li><input type="email" placeholder="Введите адрес электронной почты"/></li>
-              <li><a href='#'><button className="submit-email">Подписаться на обновления</button></a></li>
+              <li><button onClick={() => setMyEmail(true)} className="submit-email">Подписаться на обновления</button></li>
+              { !myEmail ? null : (
+              <li className='submit'>Подписка на обновления оформлена </li>
+              )}
             </ul>
           </div>
         </div>

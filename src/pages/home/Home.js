@@ -1,8 +1,7 @@
 import React from 'react'
+
 import HeaderHome from '../../components/headerHome/HeaderHome'
 import PlanRental from '../../components/planRental/PlanRental'
-
-
 import Pick from '../../components/pick/Pick'
 import Banner from '../../components/banner/Banner'
 import Choose from '../../components/choose/Choose'

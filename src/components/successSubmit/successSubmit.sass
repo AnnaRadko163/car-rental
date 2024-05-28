@@ -1,0 +1,36 @@
+.success
+    background-color: #fff
+    border: 2px solid #fff
+    color: #010103
+    flex-direction: column
+    height: 15vh
+    left: 50%
+    padding-right: 2px
+    top: 35%
+    transform: translate(-50%, -50%)
+    width: 40vw
+    z-index: 9999
+    position: fixed
+    &__wrapper
+        display: flex
+        align-items: center
+        justify-content: center
+        height: 100%
+        font-size: 2vw
+        color: #ff0000
+        padding: 25px
+
+@media (max-width:1000px)
+    .success
+        height: 20vh
+        width: 50vw
+        &__wrapper
+            font-size: 3vw
+
+@media (max-width:600px)
+    .success
+        height: 23vh
+        width: 65vw
+        &__wrapper
+            font-size: 4vw
+    

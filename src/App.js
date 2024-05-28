@@ -1,7 +1,6 @@
 import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 
-import {lazy, Suspense} from 'react'
-import { useState } from 'react';
+import {lazy, Suspense, useState} from 'react'
 import Navbar from "./components/navbar/Navbar";
 import Footer from './components/footer/Footer';
 import Home from './pages/home/Home';
@@ -17,8 +16,6 @@ const Contact = lazy(() => import("./pages/contact/Contact"))
 
 function App() {
   const [openForm, setOpenForm] = useState(false);
-  
-
   return (
     <>
       <Navbar/>
@@ -35,8 +32,6 @@ function App() {
       </Suspense>
       <Footer/>
       {openForm ? <SearchForm setOpenForm={setOpenForm}/> : null}
-      
-
     </>
   );
 }

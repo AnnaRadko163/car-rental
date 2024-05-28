@@ -1,10 +1,11 @@
-import React from 'react'
 import {useState} from 'react'
 import { Formik, Form, Field, ErrorMessage, useField } from 'formik'; 
 import * as Yup from 'yup';
-import "./searchForm.sass"
+
 import bg from "../../img/book-car/book-bg.png"
 import ReservationForm from '../reservationForm/ReservationForm';
+
+import "./searchForm.sass"
 
 const MyDataInput = ({label, ...props}) => {
   const [field, meta] = useField(props);
@@ -22,9 +23,11 @@ export default function SearchForm({setOpenForm}) {
   const [reserveForm, setReserveForm] = useState(false)
   const [dataCarForm, setDataCarForm] = useState({})
   return (
-    <div className='search-form'>
-        {!reserveForm ? (<div style={{ backgroundImage: `url(${bg})` }} className='search-form__bg' >
-          <div className='search-form__title'>
+    <>
+        {!reserveForm ? (<div className='search-form'>
+          <div style={{ backgroundImage: `url(${bg})` }} className='search-form__bg' >
+          
+        <div className='search-form__title'>
             <h2>Забронировать автомобиль</h2>
             <svg onClick={() => setOpenForm(false)} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="tabler-icon tabler-icon-x"><path d="M18 6l-12 12"></path><path d="M6 6l12 12"></path></svg>
           </div>
@@ -120,8 +123,9 @@ export default function SearchForm({setOpenForm}) {
           </Formik>
         
         </div>
+        </div>
       ) : <ReservationForm dataCarForm={dataCarForm} setOpenForm={setOpenForm}/>}
 
-    </div>
+    </>
   )
 }

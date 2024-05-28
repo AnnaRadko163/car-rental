@@ -1,8 +1,8 @@
-import React from 'react'
 import HeaderPages from '../../components/headerPages/HeaderPages'
 import listTeam from './listTeam.js'
-import "./outTeam.sass"
 import TeamItem from '../../components/teamItem/TeamItem'
+
+import "./outTeam.sass"
 
 export default function OurTeam(props) {
   return (

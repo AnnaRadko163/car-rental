@@ -1,17 +1,14 @@
 import {useState} from "react"
 import { Link } from "react-router-dom";
+
 import logo from"../../img/logo/LOGO.png"
+
 import "./navbar.sass"
+
 export default function Navbar() {
   const [mobileNav, setMobileNav] = useState(false)
   const [sticky, setSticky] = useState(false)
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
+  
   const handleScroll = () => {
     if (window.scrollY > 100) {
       setSticky(true);

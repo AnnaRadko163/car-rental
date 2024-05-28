@@ -1,5 +1,3 @@
-import React from 'react'
-
 import "./banner.sass"
 
 export default function Banner() {

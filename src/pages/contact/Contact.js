@@ -1,10 +1,11 @@
 import { Formik, Form, Field, ErrorMessage, useField } from 'formik'; 
 import * as Yup from 'yup';
+import { useState } from 'react';
 
 import React from 'react'
 import HeaderPages from '../../components/headerPages/HeaderPages'
-
 import bg from "../../img/banners/bg-contact.png"
+
 import "./contact.sass"
 
 const MyTextInput = ({label, ...props}) => {
@@ -22,6 +23,7 @@ const MyTextInput = ({label, ...props}) => {
 
 
 function Contact(props) {
+  const [submit, setSubmit] = useState(false)
   return (
     <section className='contact-section'>
       <HeaderPages title={props.title} />
@@ -62,11 +64,8 @@ function Contact(props) {
                           .required('Обязательное поле!'),    
               })}
               onSubmit={(values, actions) => {
-                alert("Ваша форма отправлена")
-                window.scrollTo({
-                top: 0,
-                behavior: "smooth",})
                 document.getElementById("formContact").reset()
+                setSubmit(true)
                 
             }}
               // onSubmit={ values => console.log(JSON.stringify(values, null, 2))}
@@ -94,12 +93,12 @@ function Contact(props) {
                   />
                   <ErrorMessage className="error" name="text" component="div"/>
                   <button type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="tabler-icon tabler-icon-mail-opened"><path d="M3 9l9 6l9 -6l-9 -6l-9 6"></path><path d="M21 9v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10"></path><path d="M3 19l6 -6"></path><path d="M15 13l6 6"></path></svg>&nbsp; Отправить сообщение</button>
+                { !submit ? null : (
+                  <div className='contact__submit'>Ваше сообщение отправлено, мы скоро с вами свяжемся!</div>
+                ) }
               </Form>
             </Formik>
-
           </div>
-          
-
         </div>
       </div>
     </section>

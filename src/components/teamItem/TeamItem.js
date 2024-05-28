@@ -1,6 +1,4 @@
-import React from 'react'
 import "./teamItem.sass"
-
 
 export default function TeamItem({id, name, profession, src }) {
   return (

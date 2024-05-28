@@ -1,8 +1,10 @@
-import React from 'react'
 import { useState } from 'react'
-import { Formik, Form, Field, ErrorMessage, useField } from 'formik'; 
+import { Formik, Form, useField } from 'formik'; 
 import * as Yup from 'yup';
+
 import dataCar from "../../pages/models/allDataCar"
+import SuccessSubmit from '../successSubmit/SuccessSubmit';
+
 import "./reservationForm.sass"
 
 const MyTextInput = ({label, ...props}) => {
@@ -35,11 +37,9 @@ const MyCheckbox = ({children, ...props}) => {
 export default function ReservationForm({dataCarForm, setOpenForm}) {
     const [reserve, setReserve] = useState(false)
     let modelCar = (dataCar.filter(e => e.title === dataCarForm.car))[0]
-    console.log(modelCar)
-
   return (
     <>
-    { !reserve ? (
+    { !reserve ? (<div className='search-form'>
         <div className='reserve'>
             <div className='reserve__title'>
                 <h2>Полное бронирование</h2>
@@ -194,7 +194,8 @@ export default function ReservationForm({dataCarForm, setOpenForm}) {
                 </Formik>
             </div>
         </div>
-    ) : null}
+        </div>
+    ) : <SuccessSubmit setOpenForm={setOpenForm}/>}
     </>
   )
 }

@@ -1,6 +1,4 @@
-import React from 'react'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
 
 import bg from "../../img/hero/hero-bg.png"
 import car from "../../img/hero/main-car.png"
@@ -16,7 +14,6 @@ export default function HeaderHome({setOpenForm}) {
     });
   };
   const handleScroll = () => {
-    // console.log(window.innerHeight)
     if (window.scrollY > window.innerHeight) {
       setScroll(true);
     } else {
@@ -24,11 +21,10 @@ export default function HeaderHome({setOpenForm}) {
     }
   };
 
-
   window.addEventListener("scroll", handleScroll)
   return (
     <>
-      <div className='hero'>
+      <section className='hero-section'>
         <img className="hero__bg" src={bg} alt='заставка'/>
         <div className='container'>
           <div className='hero-content'>
@@ -41,7 +37,7 @@ export default function HeaderHome({setOpenForm}) {
             <img src={car} alt='заставка'/>
           </div>
         </div>
-      </div>
+      </section>
       {scroll ? <div onClick={scrollToTop} className="scroll-up show-scroll">^</div> : null}
       
     </>

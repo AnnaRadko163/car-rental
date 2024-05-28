@@ -1,9 +1,8 @@
-import React from 'react'
-
 import img1 from '../../img/testimonials/1.svg'
 import img2 from '../../img/testimonials/2.svg' 
 
 import "./testimonialsItem.sass"
+
 export default function TestimonialsItem() {
   return (
     <> 
@@ -40,7 +39,7 @@ export default function TestimonialsItem() {
                             <img src={img2} alt='фото'/>
                             <span>
                             <h4>Константин Эдуардович</h4>
-                            <p>Саратов</p>
+                            <p>Тольятти</p>
                             </span>
                         </div>
                         </div>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import img1 from "../../img/plan/icon1.png"
 import img2 from "../../img/plan/icon2.png"
 import img3 from "../../img/plan/icon3.png"
@@ -28,22 +26,20 @@ const planList = [
 ]
 export default function PlanRental() {
   return (
-    <div className='plan'>
+    <section className='plan-section'>
       <div className='plan__title'>
         <h3>Спланируйте поездку сейчас</h3>
         <h2>Быстрая и простая аренда автомобиля</h2>
       </div>
       <div className='plan__icons__wrapper'>
-        {
-          planList.map(e => ( 
-            <div key={e.id} className='plan__icons__box'>
-              <img src={e.src} alt='миниатюра'/>
-              <h3>{e.name}</h3>
-              <p>{e.descr}</p>
-            </div>
-          ))
-        }
+        {planList.map(e => ( 
+          <div key={e.id} className='plan__icons__box'>
+            <img src={e.src} alt='миниатюра'/>
+            <h3>{e.name}</h3>
+            <p>{e.descr}</p>
+          </div>
+        ))}
       </div>
-    </div>
+    </section>
   )
 }

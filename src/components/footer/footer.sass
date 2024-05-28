@@ -26,13 +26,13 @@
         position: relative
         width: 100%
         z-index: 5
-        font-size: 32px
+        font-size: 3vw
         font-weight: 700
     a
         align-items: center
         color: #ff0000
         display: flex
-        font-size: 32px
+        font-size: 3vw
         gap: 1rem
         white-space: nowrap
         text-decoration: none
@@ -97,7 +97,11 @@
                 margin-top: 10px
                 outline: none
                 padding: 10px 60px
-
+    .submit
+        color: #ff0000
+        text-align: end
+        margin-top: 10px
+        transition: all .8s
 
 .submit-email 
     background-color: #ff0000
@@ -114,6 +118,65 @@
     width: fit-content
     width: 100%
     &:hover
-            background-color: #ff0000
-            box-shadow: 0 10px 15px 0 rgba(255, 0, 0, 0.767)
+        background-color: #ff0000
+        box-shadow: 0 10px 15px 0 rgba(255, 0, 0, 0.767)
             
+@media (max-width:1110px) 
+    .footer
+        &__wrapper 
+            font-size: 14px
+            gap: 20px
+            grid-template-columns: 24fr 21fr 21fr 19fr
+            &__1 
+                li:first-child 
+                    font-size: 18px
+            &__2 
+                li:first-child 
+                    font-size: 18px
+                input 
+                    padding: 10px 25px
+
+@media (max-width:800px) 
+    .footer
+        &__wrapper 
+            grid-template-columns: 1fr
+            width: 70%
+            margin: auto
+            &__1 
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                li
+                text-align: center
+                li:nth-child(2) 
+
+                    margin-bottom: 10px
+                li:first-child 
+                    font-size: 24px
+            &__2 
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                li
+                text-align: center
+                li:first-child 
+                    font-size: 24px
+
+@media (max-width:750px) 
+    .footer 
+        padding: 40px 0 
+        
+@media (max-width:600px) 
+    .footer
+        &__wrapper 
+            width:85%
+        &-tel 
+            p
+                flex-direction: column
+                gap: 0
+                font-size: 6vw
+                text-align: center
+            a
+                font-size: 6vw
