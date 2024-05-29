@@ -1,4 +1,4 @@
-<div align='center'><img src='https://github.com/AnnaRadko163/rut/assets/72429604/18cceb4a-bff0-490c-97fb-5dd38d5a7569'/></div>
+<div align='center' ><img src='https://github.com/AnnaRadko163/car-rental/assets/72429604/17868ee5-e619-417b-9421-f820715a283d'/></div>
 
 <h2>О проекте</h2>
 
@@ -15,5 +15,5 @@
 
 
 <h3 align='center'>Домашняя страница &#127968;</h3> 
-<div align='center'><img src='https://github.com/AnnaRadko163/rut/assets/72429604/ecf5a7de-23b6-474f-b46f-f7659f360e92'/></div>
+<div align='center'><img src='https://github.com/AnnaRadko163/car-rental/assets/72429604/f03a135d-0047-4ae7-a527-3f66d439fd6b'/></div>
 
